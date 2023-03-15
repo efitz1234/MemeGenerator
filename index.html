@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Meme Generator</title>
+		<link rel="stylesheet" href="meme.css" />
+	</head>
+	<body>
+		<div id="container">
+			<h1>Meme Generator</h1>
+			<div id="data-container">
+				<div id="data-entry">
+					<form id="form-container">
+						<div id="pic-form">
+							<label for="pic-url">Enter picture url: </label
+							><input type="text" id="pic-url" />
+                            <button type="button" id="enter-url">Submit</button>
+						</div>
+						<div id="text-form">
+							<label for="top-text">Enter top text: </label><input type="text" id="top-text" />
+                            
+							<label for="bottom-text"> Enter bottom text: </label
+							><input type="text" id="bottom-text" />
+                            
+                            <button type="button" id="enter-text">Submit</button>
+						</div>
+                        <div id="finish">
+                            <label for="color">Text Color</label><input type="color" id="color"><button type="button" id="color-select">Select</button> <br>
+                            <label for="top-position">Adjust Top Text Position</label><input type="range" min="-7" max="7.5" step=".5" value="7.5" id="top-postion">
+                            <label for="bottom-position">Adjust Bottom Text Position</label><input type="range" min="-8" max="6.5" step=".5" value="6.5" id="bottom-postion">
+                            <button type="button" id="generate-meme">Generate Meme!</button>
+                        </div> 
+					</form>
+					<div id="selector-container">
+						<div class="selector" id="link-page"></div>
+						<div class="selector" id="text-page"></div>
+						<div class="selector" id="submit-page"></div>
+					</div>
+				</div>
+				<div id="preview">
+					<div id="image">
+                        <div id="wrapper">
+                        <div id="upper"></div>
+                        <div id="lower"></div>
+                    </div>
+                    </div>
+                </div>
+				</div>
+			</div>
+			<div id="meme-display"></div>
+            </div>
+		</div>
+        <script src="meme.js"></script>
+	</body>
+</html>
